@@ -614,10 +614,10 @@ if (!handleSquirrelEvent()) {
         role: 'help',
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'Chia Blockchain Wiki' }),
+            label: i18n._(/* i18n */ { id: 'Maize Blockchain Wiki' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/wiki',
+                'https://github.com/Maize-Network/maize-blockchain/wiki',
               );
             },
           },
@@ -625,7 +625,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/wiki/FAQ',
+                'https://github.com/Maize-Network/maize-blockchain/wiki/FAQ',
               );
             },
           },
@@ -633,15 +633,15 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Release Notes' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/releases',
+                'https://github.com/Maize-Network/maize-blockchain/releases',
               );
             },
           },
           {
-            label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
+            label: i18n._(/* i18n */ { id: 'Telegram' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/blob/main/CONTRIBUTING.md',
+                'https://t.me/maizecoin',
               );
             },
           },
@@ -652,20 +652,38 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/issues',
+                'https://github.com/Maize-Network/maize-blockchain/issues',
               );
             },
           },
           {
-            label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
+            label: i18n._(/* i18n */ { id: 'Chat on Discord' }),
             click: () => {
-              openExternal('https://keybase.io/team/chia_network.public');
+              openExternal('https://discord.gg/2WHH7yGaT9');
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
             click: () => {
-              openExternal('https://twitter.com/chia_project');
+              openExternal('https://twitter.com/coinmaize');
+            },
+          },
+          {
+            label: i18n._(/* i18n */ { id: 'Real-time DB' }),
+            click: () => {
+              openExternal('https://chiaforksblockchain.com');
+            },
+          },
+          {
+            label: i18n._(/* i18n */ { id: 'Swap Menu Exchanger' }),
+            click: () => {
+              openExternal('https://swap.menu');
+            },
+          },
+          {
+            label: i18n._(/* i18n */ { id: 'Maize casino' }),
+            click: () => {
+              openExternal('https://casino.maize.farm');
             },
           },
         ],
