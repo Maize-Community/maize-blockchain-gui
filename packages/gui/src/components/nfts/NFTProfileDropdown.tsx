@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import type { Wallet } from '@chia/api';
-import { DropdownActions, MenuItem } from '@chia/core';
+import type { Wallet } from '@maize/api';
+import { DropdownActions, MenuItem } from '@maize/core';
 import {
   AutoAwesome as AutoAwesomeIcon,
   PermIdentity as PermIdentityIcon,
@@ -11,8 +11,8 @@ import {
   useGetDIDsQuery,
   useGetNFTWallets,
   useGetNFTWalletsWithDIDsQuery,
-} from '@chia/api-react';
-import { NFTsSmall as NFTsSmallIcon } from '@chia/icons';
+} from '@maize/api-react';
+import { NFTsSmall as NFTsSmallIcon } from '@maize/icons';
 import { orderBy } from 'lodash';
 import useNachoNFTs from '../../hooks/useNachoNFTs';
 

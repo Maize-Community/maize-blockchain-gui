@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
-import { useGetWalletsQuery, useGetCatListQuery } from '@chia/api-react';
-import { WalletType } from '@chia/api';
-import type { Wallet } from '@chia/api';
-import { useCurrencyCode } from '@chia/core';
+import { useGetWalletsQuery, useGetCatListQuery } from '@maize/api-react';
+import { WalletType } from '@maize/api';
+import type { Wallet } from '@maize/api';
+import { useCurrencyCode } from '@maize/core';
 
 export default function useWallet(walletId?: number | string): {
   loading: boolean;

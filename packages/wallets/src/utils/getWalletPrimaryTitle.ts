@@ -1,10 +1,10 @@
-import { WalletType } from '@chia/api';
-import type { Wallet } from '@chia/api';
+import { WalletType } from '@maize/api';
+import type { Wallet } from '@maize/api';
 
 export default function getWalletPrimaryTitle(wallet: Wallet): string {
   switch (wallet.type) {
     case WalletType.STANDARD_WALLET:
-      return 'Chia';
+      return 'Maize';
     default:
       return wallet.meta?.name ?? wallet.name;
   }

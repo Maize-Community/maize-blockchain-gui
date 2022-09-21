@@ -1,10 +1,10 @@
 import { createApi } from '@reduxjs/toolkit/query/react';
-import chiaLazyBaseQuery from './chiaLazyBaseQuery';
+import maizeLazyBaseQuery from './maizeLazyBaseQuery';
 
-export const baseQuery = chiaLazyBaseQuery({});
+export const baseQuery = maizeLazyBaseQuery({});
 
 export default createApi({
-  reducerPath: 'chiaApi',
+  reducerPath: 'maizeApi',
   baseQuery,
   endpoints: () => ({}),
 });

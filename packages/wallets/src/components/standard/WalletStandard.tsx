@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router-dom';
-import { WalletType } from '@chia/api';
-import { Flex, MenuItem } from '@chia/core';
-import { Offers as OffersIcon } from '@chia/icons';
+import { WalletType } from '@maize/api';
+import { Flex, MenuItem } from '@maize/core';
+import { Offers as OffersIcon } from '@maize/icons';
 import { Box, Typography, ListItemIcon } from '@mui/material';
 import WalletHistory from '../WalletHistory';
 import WalletStandardCards from './WalletStandardCards';

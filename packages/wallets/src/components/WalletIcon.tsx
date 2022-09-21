@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCurrencyCode } from '@chia/core';
+import { useCurrencyCode } from '@maize/core';
 import styled from 'styled-components';
-import { useGetCatListQuery } from '@chia/api-react';
-import { WalletType, type Wallet } from '@chia/api';
+import { useGetCatListQuery } from '@maize/api-react';
+import { WalletType, type Wallet } from '@maize/api';
 import { Typography, type TypographyProps } from '@mui/material';
 
 const StyledSymbol = styled(Typography)`

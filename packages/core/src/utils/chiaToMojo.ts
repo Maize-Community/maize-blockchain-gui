@@ -1,9 +1,9 @@
 import BigNumber from 'bignumber.js';
 import Unit from '../constants/Unit';
-import chiaFormatter from './chiaFormatter';
+import maizeFormatter from './maizeFormatter';
 
-export default function chiaToMojo(chia: string | number | BigNumber): BigNumber {
-  return chiaFormatter(chia, Unit.CHIA)
+export default function maizeToMojo(maize: string | number | BigNumber): BigNumber {
+  return maizeFormatter(maize, Unit.MAIZE)
     .to(Unit.MOJO)
     .toBigNumber();
 }

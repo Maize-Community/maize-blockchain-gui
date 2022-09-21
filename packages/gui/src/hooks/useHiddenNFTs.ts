@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
-import type { NFTInfo } from '@chia/api';
-import { useHiddenList } from '@chia/core';
+import type { NFTInfo } from '@maize/api';
+import { useHiddenList } from '@maize/core';
 
 export default function useHiddenNFTs() {
   const [isNFTHidden, setIsNFTHidden, hiddenNFTs] =

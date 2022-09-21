@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Trans } from '@lingui/macro';
-import { Flex, Loading, MenuItem, useOpenDialog } from '@chia/core';
+import { Flex, Loading, MenuItem, useOpenDialog } from '@maize/core';
 import { Alert, Typography } from '@mui/material';
 import {
   Edit as RenameIcon,
   Fingerprint as FingerprintIcon,
 } from '@mui/icons-material';
 import { Box, ListItemIcon } from '@mui/material';
-import { WalletType } from '@chia/api';
-import { useSetCATNameMutation, useGetCatListQuery } from '@chia/api-react';
-import { Offers as OffersIcon } from '@chia/icons';
+import { WalletType } from '@maize/api';
+import { useSetCATNameMutation, useGetCatListQuery } from '@maize/api-react';
+import { Offers as OffersIcon } from '@maize/icons';
 import WalletHistory from '../WalletHistory';
 import useWallet from '../../hooks/useWallet';
 import WalletReceiveAddress from '../WalletReceiveAddress';

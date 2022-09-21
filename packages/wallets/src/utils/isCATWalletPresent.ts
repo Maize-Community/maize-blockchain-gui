@@ -1,5 +1,5 @@
-import type { Wallet, CATToken } from '@chia/api';
-import { WalletType } from '@chia/api';
+import type { Wallet, CATToken } from '@maize/api';
+import { WalletType } from '@maize/api';
 
 export default function isCATWalletPresent(wallets: Wallet[], token: CATToken): boolean {
   return !!wallets?.find((wallet) => {

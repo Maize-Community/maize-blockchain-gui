@@ -1,6 +1,6 @@
 import React from 'react';
-import { Loading, Flex } from '@chia/core';
-import { useGetThrottlePlotQueueQuery, useGetTotalHarvestersSummaryQuery } from '@chia/api-react';
+import { Loading, Flex } from '@maize/core';
+import { useGetThrottlePlotQueueQuery, useGetTotalHarvestersSummaryQuery } from '@maize/api-react';
 import { Grid } from '@mui/material';
 import PlotHero from './PlotOverviewHero';
 import PlotOverviewPlots from './PlotOverviewPlots';

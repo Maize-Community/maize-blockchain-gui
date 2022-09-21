@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Trans, t } from '@lingui/macro';
 import { useForm } from 'react-hook-form';
-import { SyncingStatus } from '@chia/api';
+import { SyncingStatus } from '@maize/api';
 import {
   useExtendDerivationIndexMutation,
   useGetCurrentDerivationIndexQuery,
-} from '@chia/api-react';
+} from '@maize/api-react';
 import {
   AlertDialog,
   ButtonLoading,
@@ -13,8 +13,8 @@ import {
   Form,
   TextField,
   useOpenDialog,
-} from '@chia/core';
-import { useWalletState } from '@chia/wallets';
+} from '@maize/core';
+import { useWalletState } from '@maize/wallets';
 
 type FormData = {
   index: string;

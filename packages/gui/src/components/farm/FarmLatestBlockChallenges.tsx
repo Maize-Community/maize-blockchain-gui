@@ -1,10 +1,10 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Table, Card } from '@chia/core';
+import { Table, Card } from '@maize/core';
 import {
   useGetSignagePointsQuery,
   useGetTotalHarvestersSummaryQuery,
-} from '@chia/api-react';
+} from '@maize/api-react';
 import type { Row } from '../core/components/Table/Table';
 
 const cols = [

@@ -12,7 +12,7 @@ import {
   useAddKeyMutation,
   useLogInMutation,
   useSetLabelMutation,
-} from '@chia/api-react';
+} from '@maize/api-react';
 import { useNavigate } from 'react-router';
 import { useEffectOnce } from 'react-use';
 import {
@@ -23,7 +23,7 @@ import {
   Loading,
   Logo,
   useShowError,
-} from '@chia/core';
+} from '@maize/core';
 
 type FormData = {
   label: string;

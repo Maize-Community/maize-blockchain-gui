@@ -3,8 +3,8 @@ import { Trans } from '@lingui/macro';
 import {
   Grid, Typography,
 } from '@mui/material';
-import { useGetWalletsQuery } from '@chia/api-react';
-import { Flex, Loading } from '@chia/core';
+import { useGetWalletsQuery } from '@maize/api-react';
+import { Flex, Loading } from '@maize/core';
 import { useNavigate } from 'react-router';
 import { Eco as HomeWorkIcon, Add as AddIcon } from '@mui/icons-material';
 import Wallet from '../../types/Wallet';

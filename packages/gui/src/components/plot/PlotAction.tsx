@@ -1,10 +1,10 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { ConfirmDialog, More, MenuItem, useOpenDialog } from '@chia/core';
+import { ConfirmDialog, More, MenuItem, useOpenDialog } from '@maize/core';
 import { ListItemIcon, Typography } from '@mui/material';
 import { DeleteForever as DeleteForeverIcon } from '@mui/icons-material';
-import { useDeletePlotMutation } from '@chia/api-react';
-import type { Plot } from '@chia/api';
+import { useDeletePlotMutation } from '@maize/api-react';
+import type { Plot } from '@maize/api';
 
 export type PlotActionProps = {
   plot: Plot;

@@ -7,7 +7,7 @@ import {
   useAddKeyMutation,
   useLogInMutation,
   useSetLabelMutation,
-} from '@chia/api-react';
+} from '@maize/api-react';
 import { useNavigate } from 'react-router';
 import {
   AlertDialog,
@@ -20,8 +20,8 @@ import {
   useOpenDialog,
   useTrans,
   TextField,
-} from '@chia/core';
-import { english } from '@chia/api';
+} from '@maize/core';
+import { english } from '@maize/api';
 import MnemonicPaste from './PasteMnemonic';
 
 /*
@@ -150,7 +150,7 @@ export default function WalletImport() {
           <Typography variant="subtitle1" align="center">
             <Trans>
               Enter the 24 word mnemonic that you have saved in order to restore
-              your Chia wallet.
+              your Maize wallet.
             </Trans>
           </Typography>
           <Grid spacing={2} rowSpacing={3} container>

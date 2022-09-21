@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useGetWalletsQuery } from '../services';
-import { Wallet, WalletType } from '@chia/api';
+import { Wallet, WalletType } from '@maize/api';
 
 export default function useGetNFTWallets() {
   const { data, isLoading } = useGetWalletsQuery();

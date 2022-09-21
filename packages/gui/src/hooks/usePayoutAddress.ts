@@ -1,6 +1,6 @@
-import { toBech32m, fromBech32m } from '@chia/api';
-import type { PlotNFT } from '@chia/api';
-import { useSetPayoutInstructionsMutation, useGetNetworkInfoQuery } from '@chia/api-react';
+import { toBech32m, fromBech32m } from '@maize/api';
+import type { PlotNFT } from '@maize/api';
+import { useSetPayoutInstructionsMutation, useGetNetworkInfoQuery } from '@maize/api-react';
 
 export default function usePayoutAddress(nft: PlotNFT): {
   loading: boolean;

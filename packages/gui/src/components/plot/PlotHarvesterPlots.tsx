@@ -7,13 +7,13 @@ import {
   FormatBytes,
   Tooltip,
   StateColor,
-} from '@chia/core';
+} from '@maize/core';
 import { Warning as WarningIcon } from '@mui/icons-material';
-import { type Plot } from '@chia/api';
+import { type Plot } from '@maize/api';
 import {
   useGetHarvesterPlotsValidQuery,
   useGetHarvesterQuery,
-} from '@chia/api-react';
+} from '@maize/api-react';
 import styled from 'styled-components';
 import { Box, Typography } from '@mui/material';
 import PlotStatus from './PlotStatus';

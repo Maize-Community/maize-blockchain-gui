@@ -1,8 +1,8 @@
 {
-  "name": "@chia/api",
-  "author": "Chia Network <hello@chia.net> (https://chia.net/)",
-  "description": "Chia API Library",
-  "productName": "Chia Blockchain",
+  "name": "@maize/api",
+  "author": "Maize Network <hello@maize.farm> (https://maize.farm/)",
+  "description": "Maize API Library",
+  "productName": "Maize Blockchain",
   "private": true,
   "version": "1.0.0",
   "engines": {

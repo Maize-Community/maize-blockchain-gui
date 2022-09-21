@@ -10,14 +10,14 @@ import BigNumber from 'bignumber.js';
 import { orderBy, groupBy, map } from 'lodash';
 import { useMeasure } from 'react-use';
 import styled from 'styled-components';
-import { useGetWalletBalanceQuery } from '@chia/api-react';
-import { TransactionType } from '@chia/api';
-import type { Transaction } from '@chia/api';
+import { useGetWalletBalanceQuery } from '@maize/api-react';
+import { TransactionType } from '@maize/api';
+import type { Transaction } from '@maize/api';
 import {
   useCurrencyCode,
-  mojoToChia,
+  mojoToMaize,
   blockHeightToTimestamp,
-} from '@chia/core';
+} from '@maize/core';
 import useWalletTransactions from '../hooks/useWalletTransactions';
 
 const StyledGraphContainer = styled.div`
@@ -115,8 +115,8 @@ function prepareGraphPoints(
         peakTransaction.confirmedAtHeight,
         peakTransaction
       ),
-      y: BigNumber.max(0, mojoToChia(start)).toNumber(), // max 21,000,000 safe to number
-      tooltip: mojoToChia(balance).toString(), // bignumber is not supported by react
+      y: BigNumber.max(0, mojoToMaize(start)).toNumber(), // max 21,000,000 safe to number
+      tooltip: mojoToMaize(balance).toString(), // bignumber is not supported by react
     },
   ];
 
@@ -127,8 +127,8 @@ function prepareGraphPoints(
 
     points.push({
       x: timestamp,
-      y: BigNumber.max(0, mojoToChia(start)).toNumber(), // max 21,000,000 safe to number
-      tooltip: mojoToChia(start).toString(), // bignumber is not supported by react
+      y: BigNumber.max(0, mojoToMaize(start)).toNumber(), // max 21,000,000 safe to number
+      tooltip: mojoToMaize(start).toString(), // bignumber is not supported by react
     });
   });
 

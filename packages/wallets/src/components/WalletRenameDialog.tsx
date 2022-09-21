@@ -10,7 +10,7 @@ import {
   Form,
   TextField,
   useOpenDialog,
-} from '@chia/core';
+} from '@maize/core';
 
 type WalletRenameDialogFormData = {
   name: string;

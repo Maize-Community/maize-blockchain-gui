@@ -7,11 +7,11 @@ import {
   Loading,
   Flex,
   TooltipIcon,
-} from '@chia/core';
+} from '@maize/core';
 import {
   useGetCurrentAddressQuery,
   useGetNextAddressMutation,
-} from '@chia/api-react';
+} from '@maize/api-react';
 import {
   Box,
   TextField,

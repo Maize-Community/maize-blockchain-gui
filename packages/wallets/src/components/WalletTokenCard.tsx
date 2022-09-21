@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState, useRef } from 'react';
-import { WalletType } from '@chia/api';
-import { useSetCATNameMutation } from '@chia/api-react';
+import { WalletType } from '@maize/api';
+import { useSetCATNameMutation } from '@maize/api-react';
 import { Trans } from '@lingui/macro';
 import { Box, Typography, Switch, CircularProgress } from '@mui/material';
 import {
@@ -11,7 +11,7 @@ import {
   useShowError,
   Form,
   TextField,
-} from '@chia/core';
+} from '@maize/core';
 import { type ListItem } from '../hooks/useWalletsList';
 import { useForm } from 'react-hook-form';
 

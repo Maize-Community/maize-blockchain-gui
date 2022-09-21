@@ -7,7 +7,7 @@ import {
   Speed as SpeedIcon,
   HomeWork as HomeWorkIcon,
 } from '@mui/icons-material';
-import { Flex } from '@chia/core';
+import { Flex } from '@maize/core';
 import WalletCreateCard from './WalletCreateCard';
 
 export default function WalletCreateList() {
@@ -32,7 +32,7 @@ export default function WalletCreateList() {
         <Grid xs={12} sm={6} md={4} item>
           <WalletCreateCard
             onSelect={handleCreateCAT}
-            title={<Trans>Chia Asset Token</Trans>}
+            title={<Trans>Maize Asset Token</Trans>}
             icon={<HomeWorkIcon fontSize="large" color="primary" />}
           />
         </Grid>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatLargeNumber, CardSimple, StateColor } from '@chia/core';
-import { useGetBlockchainStateQuery } from '@chia/api-react';
+import { FormatLargeNumber, CardSimple, StateColor } from '@maize/core';
+import { useGetBlockchainStateQuery } from '@maize/api-react';
 import styled from 'styled-components';
 
 const StyledWarning = styled.span`

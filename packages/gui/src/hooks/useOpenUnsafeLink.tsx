@@ -7,7 +7,7 @@ import {
   Flex,
   useOpenDialog,
   useOpenExternal,
-} from '@chia/core';
+} from '@maize/core';
 import {
   Checkbox,
   FormControlLabel,

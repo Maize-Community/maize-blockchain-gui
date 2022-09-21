@@ -6,14 +6,14 @@ import {
   DropdownActions,
   MenuItem,
   /*useTrans,*/ usePersistState,
-} from '@chia/core';
+} from '@maize/core';
 import { Trans } from '@lingui/macro';
 import { Switch, FormGroup, FormControlLabel } from '@mui/material';
 import { FilterList as FilterListIcon } from '@mui/icons-material';
 // import { defineMessage } from '@lingui/macro';
-import { WalletReceiveAddressField } from '@chia/wallets';
-import type { NFTInfo, Wallet } from '@chia/api';
-import { useGetNFTWallets /*useGetNFTsByNFTIDsQuery*/ } from '@chia/api-react';
+import { WalletReceiveAddressField } from '@maize/wallets';
+import type { NFTInfo, Wallet } from '@maize/api';
+import { useGetNFTWallets /*useGetNFTsByNFTIDsQuery*/ } from '@maize/api-react';
 import { Box, Grid } from '@mui/material';
 // import NFTGallerySidebar from './NFTGallerySidebar';
 import NFTCardLazy from '../NFTCardLazy';

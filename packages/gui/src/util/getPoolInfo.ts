@@ -1,5 +1,5 @@
-import type { PoolInfo } from '@chia/api';
-import { toCamelCase } from '@chia/api';
+import type { PoolInfo } from '@maize/api';
+import { toCamelCase } from '@maize/api';
 
 export default async function getPoolInfo(poolUrl: string): PoolInfo {
   const url = `${poolUrl}/pool_info`;

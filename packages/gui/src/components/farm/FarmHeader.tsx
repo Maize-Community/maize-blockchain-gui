@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, More, useOpenDialog, MenuItem } from '@chia/core';
+import { Flex, More, useOpenDialog, MenuItem } from '@maize/core';
 import { ListItemIcon, Typography } from '@mui/material';
 import { Settings as SettingsIcon } from '@mui/icons-material';
 import FarmManageFarmingRewards from './FarmManageFarmingRewards';

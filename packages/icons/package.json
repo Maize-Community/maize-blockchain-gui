@@ -1,8 +1,8 @@
 {
-  "name": "@chia/icons",
-  "author": "Chia Network <hello@chia.net> (https://chia.net/)",
-  "description": "Chia Icons Library",
-  "productName": "Chia Blockchain",
+  "name": "@maize/icons",
+  "author": "Maize Network <hello@maize.farm> (https://maize.farm/)",
+  "description": "Maize Icons Library",
+  "productName": "Maize Blockchain",
   "private": true,
   "version": "1.0.0",
   "engines": {

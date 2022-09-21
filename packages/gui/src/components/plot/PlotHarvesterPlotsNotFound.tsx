@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { TableControlled } from '@chia/core';
-import { type Plot } from '@chia/api';
-import { useGetHarvesterPlotsKeysMissingQuery, useGetHarvesterQuery } from '@chia/api-react';
+import { TableControlled } from '@maize/core';
+import { type Plot } from '@maize/api';
+import { useGetHarvesterPlotsKeysMissingQuery, useGetHarvesterQuery } from '@maize/api-react';
 import { Typography } from '@mui/material';
 import PlotAction from './PlotAction';
 

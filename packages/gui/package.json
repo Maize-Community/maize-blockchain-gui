@@ -1,9 +1,9 @@
 {
-  "name": "@chia/gui",
-  "author": "Chia Network <hello@chia.net> (https://chia.net/)",
-  "description": "GUI for Chia Blockchain",
+  "name": "@maize/gui",
+  "author": "Maize Network <hello@maize.farm> (https://maize.farm/)",
+  "description": "GUI for Maize Blockchain",
   "license": "Apache-2.0",
-  "productName": "Chia Blockchain",
+  "productName": "Maize Blockchain",
   "private": true,
   "homepage": "./",
   "main": "build/electron/main.js",
@@ -11,8 +11,8 @@
     "node": ">=12.20.0"
   },
   "build": {
-    "productName": "chia",
-    "appId": "net.chia.blockchain",
+    "productName": "maize",
+    "appId": "net.maize.blockchain",
     "asar": true,
     "asarUnpack": "**/daemon/**",
     "npmRebuild": false,
@@ -25,13 +25,13 @@
     ],
     "protocols": [
       {
-        "name": "Chia URL",
+        "name": "Maize URL",
         "schemes": [
-          "chia"
+          "maize"
         ]
       },
       {
-        "name": "Chia XCH Address",
+        "name": "Maize XCH Address",
         "schemes": [
           "xch"
         ]
@@ -41,10 +41,10 @@
       "target": "nsis",
       "icon": "src/assets/img/maize.ico",
       "timeStampServer": "http://timestamp.comodoca.com",
-      "executableName": "Chia"
+      "executableName": "Maize"
     },
     "nsis": {
-      "artifactName": "ChiaSetup-${env.CHIA_INSTALLER_VERSION}.exe",
+      "artifactName": "MaizeSetup-${env.MAIZE_INSTALLER_VERSION}.exe",
       "oneClick": false,
       "deleteAppDataOnUninstall": true,
       "allowToChangeInstallationDirectory": true,
@@ -54,13 +54,13 @@
       "include": "installer.nsh"
     },
     "mac": {
-      "executableName": "Chia",
-      "artifactName": "${productName}-${env.CHIA_INSTALLER_VERSION}.${ext}",
+      "executableName": "Maize",
+      "artifactName": "${productName}-${env.MAIZE_INSTALLER_VERSION}.${ext}",
       "category": "public.app-category.finance",
       "target": "dmg",
       "icon": "src/assets/img/maize.icns",
       "entitlements": "entitlements.mac.plist",
-      "provisioningProfile": "chiablockchain.provisionprofile",
+      "provisioningProfile": "maizeblockchain.provisionprofile",
       "darkModeSupport": true,
       "hardenedRuntime": true,
       "gatekeeperAssess": false
@@ -87,7 +87,7 @@
       }
     },
     "linux": {
-      "artifactName": "${productName}-${env.CHIA_INSTALLER_VERSION}.${ext}",
+      "artifactName": "${productName}-${env.MAIZE_INSTALLER_VERSION}.${ext}",
       "icon": "src/assets/img/maize.icns"
     },
     "deb": {
@@ -102,7 +102,7 @@
         "--rpm-rpmbuild-define=_enable_debug_package 0",
         "--rpm-rpmbuild-define=debug_package %{nil}",
         "--rpm-rpmbuild-define=__os_install_post /usr/lib/rpm/brp-compress %{nil}",
-        "--rpm-attr=4755,root,root:/opt/chia/chrome-sandbox"
+        "--rpm-attr=4755,root,root:/opt/maize/chrome-sandbox"
       ]
     }
   },
@@ -130,11 +130,11 @@
     "test:jest": "jest"
   },
   "dependencies": {
-    "@chia/api": "1.0.0",
-    "@chia/api-react": "1.0.0",
-    "@chia/core": "1.0.0",
-    "@chia/icons": "1.0.0",
-    "@chia/wallets": "1.0.0",
+    "@maize/api": "1.0.0",
+    "@maize/api-react": "1.0.0",
+    "@maize/core": "1.0.0",
+    "@maize/icons": "1.0.0",
+    "@maize/wallets": "1.0.0",
     "@electron/remote": "2.0.1",
     "@lingui/core": "3.13.0",
     "@lingui/macro": "3.13.0",

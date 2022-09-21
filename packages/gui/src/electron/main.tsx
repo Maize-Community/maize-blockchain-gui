@@ -23,12 +23,12 @@ import '../config/env';
 import handleSquirrelEvent from './handleSquirrelEvent';
 import loadConfig from '../util/loadConfig';
 import manageDaemonLifetime from '../util/manageDaemonLifetime';
-import chiaEnvironment from '../util/chiaEnvironment';
+import maizeEnvironment from '../util/maizeEnvironment';
 import { setUserDataDir } from '../util/userData';
 import { i18n } from '../config/locales';
 import About from '../components/about/About';
 import packageJson from '../../package.json';
-import AppIcon from '../assets/img/chia64x64.png';
+import AppIcon from '../assets/img/maize64x64.png';
 import windowStateKeeper from 'electron-window-state';
 import validateSha256 from './validateSha256';
 
@@ -46,7 +46,7 @@ if (!fs.existsSync(thumbCacheFolder)) {
 }
 const validatingProgress = {};
 
-// Set the userData directory to its location within CHIA_ROOT/gui
+// Set the userData directory to its location within MAIZE_ROOT/gui
 setUserDataDir();
 
 function renderAbout(): string {
@@ -122,7 +122,7 @@ if (!handleSquirrelEvent()) {
 
   const ensureCorrectEnvironment = () => {
     // check that the app is either packaged or running in the python venv
-    if (!chiaEnvironment.guessPackaged() && !('VIRTUAL_ENV' in process.env)) {
+    if (!maizeEnvironment.guessPackaged() && !('VIRTUAL_ENV' in process.env)) {
       app.quit();
       return false;
     }
@@ -149,7 +149,7 @@ if (!handleSquirrelEvent()) {
 
     const createWindow = async () => {
       if (manageDaemonLifetime(NET)) {
-        chiaEnvironment.startChiaDaemon();
+        maizeEnvironment.startMaizeDaemon();
       }
 
       ipcMain.handle('getConfig', () => loadConfig(NET));
@@ -691,12 +691,12 @@ if (!handleSquirrelEvent()) {
     ];
 
     if (process.platform === 'darwin') {
-      // Chia Blockchain menu (Mac)
+      // Maize Blockchain menu (Mac)
       template.unshift({
-        label: i18n._(/* i18n */ { id: 'Chia' }),
+        label: i18n._(/* i18n */ { id: 'Maize' }),
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'About Chia Blockchain' }),
+            label: i18n._(/* i18n */ { id: 'About Maize Blockchain' }),
             click: () => {
               openAbout();
             },
@@ -783,7 +783,7 @@ if (!handleSquirrelEvent()) {
           type: 'separator',
         },
         {
-          label: i18n._(/* i18n */ { id: 'About Chia Blockchain' }),
+          label: i18n._(/* i18n */ { id: 'About Maize Blockchain' }),
           click() {
             openAbout();
           },

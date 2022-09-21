@@ -6,8 +6,8 @@ import {
   LayoutDashboard,
   Mode,
   useMode,
-} from '@chia/core';
-import { WalletAdd, WalletImport, Wallets } from '@chia/wallets';
+} from '@maize/core';
+import { WalletAdd, WalletImport, Wallets } from '@maize/wallets';
 import AppProviders from './AppProviders';
 import FullNode from '../fullNode/FullNode';
 import Block from '../block/Block';

@@ -7,9 +7,9 @@ import {
   useCheckOfferValidityMutation,
   useGetNFTInfoQuery,
   useGetNFTWallets,
-} from '@chia/api-react';
-import type { Wallet } from '@chia/api';
-import { OfferSummaryRecord, OfferTradeRecord } from '@chia/api';
+} from '@maize/api-react';
+import type { Wallet } from '@maize/api';
+import { OfferSummaryRecord, OfferTradeRecord } from '@maize/api';
 import {
   Back,
   Button,
@@ -22,11 +22,11 @@ import {
   Tooltip,
   TooltipIcon,
   catToMojo,
-  chiaToMojo,
-  mojoToChia,
+  maizeToMojo,
+  mojoToMaize,
   useColorModeValue,
   useShowError,
-} from '@chia/core';
+} from '@maize/core';
 import { Box, Divider, Grid, Typography } from '@mui/material';
 import { Warning as WarningIcon } from '@mui/icons-material';
 import { useTheme } from '@mui/material/styles';
@@ -93,7 +93,7 @@ function NFTOfferSummaryRow(props: NFTOfferSummaryRowProps) {
         let assetType: OfferAsset | undefined;
 
         if (['xch', 'txch'].includes(key.toLowerCase())) {
-          assetType = OfferAsset.CHIA;
+          assetType = OfferAsset.MAIZE;
         } else if (infoDict?.type) {
           switch (infoDict.type.toLowerCase()) {
             case 'singleton':
@@ -121,7 +121,7 @@ function NFTOfferSummaryRow(props: NFTOfferSummaryRowProps) {
     switch (assetType) {
       case undefined:
         return null;
-      case OfferAsset.CHIA: // fall-through
+      case OfferAsset.MAIZE: // fall-through
       case OfferAsset.TOKEN:
         return (
           <OfferSummaryTokenRow
@@ -419,7 +419,7 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
     }
 
     const royaltyPercentage = convertRoyaltyToPercentage(nft.royaltyPercentage);
-    const xchMakerFee = mojoToChia(makerFee);
+    const xchMakerFee = mojoToMaize(makerFee);
 
     return {
       ...calculateNFTRoyalties(
@@ -437,8 +437,8 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
     : 'textSecondary';
   const overrideNFTSellerAmount =
     exchangeType === NFTOfferExchangeType.TokenForNFT
-      ? assetType === OfferAsset.CHIA
-        ? chiaToMojo(nftSaleInfo?.nftSellerNetAmount ?? 0)
+      ? assetType === OfferAsset.MAIZE
+        ? maizeToMojo(nftSaleInfo?.nftSellerNetAmount ?? 0)
         : catToMojo(nftSaleInfo?.nftSellerNetAmount ?? 0)
       : undefined;
 

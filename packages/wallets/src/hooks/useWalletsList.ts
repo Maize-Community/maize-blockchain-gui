@@ -1,14 +1,14 @@
 import { useMemo } from 'react';
-import { WalletType } from '@chia/api';
-import type { Wallet } from '@chia/api';
-import { useShowError } from '@chia/core';
+import { WalletType } from '@maize/api';
+import type { Wallet } from '@maize/api';
+import { useShowError } from '@maize/core';
 import { orderBy } from 'lodash';
 import {
   useGetWalletsQuery,
   useGetStrayCatsQuery,
   useGetCatListQuery,
   useAddCATTokenMutation,
-} from '@chia/api-react';
+} from '@maize/api-react';
 import useHiddenWallet from './useHiddenWallet';
 
 export type ListItem = {
@@ -167,7 +167,7 @@ export default function useWalletsList(
         assetId: wallet.meta?.assetId,
         name:
           wallet.type === WalletType.STANDARD_WALLET
-            ? 'Chia'
+            ? 'Maize'
             : wallet.meta?.name ?? wallet.name,
       })),
       ...catBaseWallets.map((wallet: Wallet) => ({

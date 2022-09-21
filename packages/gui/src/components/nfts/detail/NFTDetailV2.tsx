@@ -7,9 +7,9 @@ import {
   LayoutDashboardSub,
   Loading,
   useOpenDialog,
-} from '@chia/core';
-import type { NFTInfo } from '@chia/api';
-import { useGetNFTWallets, useGetNFTInfoQuery } from '@chia/api-react';
+} from '@maize/core';
+import type { NFTInfo } from '@maize/api';
+import { useGetNFTWallets, useGetNFTInfoQuery } from '@maize/api-react';
 import {
   Box,
   Grid,

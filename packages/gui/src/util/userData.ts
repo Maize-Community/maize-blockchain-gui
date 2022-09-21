@@ -4,31 +4,31 @@ import path from 'path';
 import fs from 'fs';
 
 export function getUserDataDir(): string {
-  const chiaRootPath = getConfigRootDir();
+  const maizeRootPath = getConfigRootDir();
   const appName = app.getName();
-  const userDataDir = path.join(chiaRootPath, 'gui', appName);
+  const userDataDir = path.join(maizeRootPath, 'gui', appName);
   return userDataDir;
 }
 
 export function setUserDataDir(): void {
-  const chiaRootUserDataPath = getUserDataDir();
+  const maizeRootUserDataPath = getUserDataDir();
 
   migrateUserDataIfNecessary();
 
-  console.info(`Setting user data directory to ${chiaRootUserDataPath}`);
-  app.setPath('userData', chiaRootUserDataPath);
+  console.info(`Setting user data directory to ${maizeRootUserDataPath}`);
+  app.setPath('userData', maizeRootUserDataPath);
 }
 
 export function migrateUserDataIfNecessary() {
   const defaultUserDataPath = app.getPath('userData');
-  const chiaRootUserDataPath = getUserDataDir();
+  const maizeRootUserDataPath = getUserDataDir();
   const leveldbSrcPath = path.join(
     defaultUserDataPath,
     'Local Storage',
     'leveldb',
   );
   const leveldbDestPath = path.join(
-    chiaRootUserDataPath,
+    maizeRootUserDataPath,
     'Local Storage',
     'leveldb',
   );

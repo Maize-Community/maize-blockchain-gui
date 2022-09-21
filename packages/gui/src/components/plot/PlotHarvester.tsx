@@ -7,8 +7,8 @@ import {
   FormatBytes,
   Tooltip,
   FormatLargeNumber,
-} from '@chia/core';
-import { useGetHarvesterQuery } from '@chia/api-react';
+} from '@maize/core';
+import { useGetHarvesterQuery } from '@maize/api-react';
 import { Typography, Chip } from '@mui/material';
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
 import { Box, Tab, Tabs } from '@mui/material';

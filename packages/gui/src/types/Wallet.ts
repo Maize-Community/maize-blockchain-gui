@@ -1,4 +1,4 @@
-import { WalletType } from '@chia/api';
+import { WalletType } from '@maize/api';
 import type Transaction from './Transaction';
 import WalletBalance from './WalletBalance';
 
