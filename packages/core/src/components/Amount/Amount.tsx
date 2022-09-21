@@ -50,7 +50,7 @@ export default function Amount(props: AmountProps) {
   const correctedValue = value && value[0] === '.' ? `0${value}` : value;
 
   const currencyCode = symbol === undefined ? defaultCurrencyCode : symbol;
-  const isMaizeCurrency = ['XCH', 'TXCH'].includes(currencyCode);
+  const isMaizeCurrency = ['XMZ', 'TXMZ'].includes(currencyCode);
   const mojo = isMaizeCurrency
     ? maizeToMojo(correctedValue)
     : catToMojo(correctedValue);

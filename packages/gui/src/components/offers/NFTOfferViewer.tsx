@@ -92,7 +92,7 @@ function NFTOfferSummaryRow(props: NFTOfferSummaryRowProps) {
         const infoDict = summaryInfo[key];
         let assetType: OfferAsset | undefined;
 
-        if (['xch', 'txch'].includes(key.toLowerCase())) {
+        if (['xmz', 'txmz'].includes(key.toLowerCase())) {
           assetType = OfferAsset.MAIZE;
         } else if (infoDict?.type) {
           switch (infoDict.type.toLowerCase()) {
@@ -419,12 +419,12 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
     }
 
     const royaltyPercentage = convertRoyaltyToPercentage(nft.royaltyPercentage);
-    const xchMakerFee = mojoToMaize(makerFee);
+    const xmzMakerFee = mojoToMaize(makerFee);
 
     return {
       ...calculateNFTRoyalties(
         amount,
-        parseFloat(xchMakerFee),
+        parseFloat(xmzMakerFee),
         convertRoyaltyToPercentage(nft.royaltyPercentage),
         exchangeType,
       ),

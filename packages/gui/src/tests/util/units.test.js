@@ -112,14 +112,14 @@ describe('units', () => {
     });
     it('updates an existing display', () => {
       units.setDisplay('maize', {
-        format: '{amount} TXCH',
+        format: '{amount} TXMZ',
         fractionDigits: 0,
       });
 
       const result = units.getDisplay('maize');
 
       expect(result).toEqual({
-        format: '{amount} TXCH',
+        format: '{amount} TXMZ',
         fractionDigits: 0,
       });
     });

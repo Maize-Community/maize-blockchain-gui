@@ -35,7 +35,7 @@ export default function useAssetIdName() {
       let isVerified = false;
 
       if (walletType === WalletType.STANDARD_WALLET) {
-        assetId = 'xch';
+        assetId = 'xmz';
         name = 'Maize';
         symbol = currencyCode;
         isVerified = true;
@@ -89,11 +89,11 @@ export default function useAssetIdName() {
       assetIdNameMapping.set(assetId, entry);
     });
 
-    // If using testnet, add a TXCH assetId entry
-    if (currencyCode === 'TXCH') {
-      const assetId = 'txch';
+    // If using testnet, add a TXMZ assetId entry
+    if (currencyCode === 'TXMZ') {
+      const assetId = 'txmz';
       const name = 'Maize (Testnet)';
-      const symbol = 'TXCH';
+      const symbol = 'TXMZ';
       const displayName = symbol ? symbol : name;
       const entry: AssetIdMapEntry = {
         walletId: 1,

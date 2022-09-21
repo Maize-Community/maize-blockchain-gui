@@ -13,7 +13,7 @@ const display: {
   [key in Unit]: Display;
 } = {
   maize: {
-    format: '{amount} XCH',
+    format: '{amount} XMZ',
     fractionDigits: 12,
   },
   mojo: {
